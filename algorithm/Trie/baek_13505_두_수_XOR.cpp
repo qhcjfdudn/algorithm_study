@@ -36,6 +36,8 @@ struct Trie {
 void maxXor(Trie &a, Trie &b, int pos, int pSum) {
 	if (pos == -1) maxSum = pSum;
 	else if ((pSum | ((1 << (pos + 1)) - 1)) > maxSum) { // 탐색 수를 줄이기 위한 낙관적 휴리스틱
+							     // 휴리스틱을 사용하지 않아도 시간 안에 통과할 수 있다.
+							     // 그럴 경우, pos == -1 일 때, 최대값 비교를 하고 갱신해주어야 한다.
     bool checked = false;
     // 1.
 		for (int i = 0; i < 2; i++)
