@@ -16,3 +16,27 @@
 [이론]()
 
 [문제 리스트](./algorithm/DP)
+
+
+
+#### KMP
+
+[이론]()
+
+[문제 리스트](./algorithm/KMP)
+
+
+
+#### Trie
+
+[이론]()
+
+[문제 리스트](./algorithm/Trie)
+
+
+
+#### Dijkstra
+
+[이론]()
+
+[문제 리스트](./algorithm/dijkstra)
