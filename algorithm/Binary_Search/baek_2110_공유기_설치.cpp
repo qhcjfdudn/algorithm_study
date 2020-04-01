@@ -1,3 +1,11 @@
+/* https://www.acmicpc.net/problem/2110 */
+
+/*
+	공유기가 설치될 수 있는 간격을 임의로 정하고, 간격 내에서 공유기를 설치했을 때
+	C개를 충족하지 못할 경우, 현재 설정한 간격보다 더 큰 간격 중에서는 답이 있을 수 없다.
+	이와 같은 방법으로 간격이 될 수 있는 범위를 이진탐색으로 찾을 수 있다.
+*/
+
 #include <iostream>
 #include <algorithm>
 using namespace std;
