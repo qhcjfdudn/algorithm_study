@@ -36,3 +36,10 @@
 #### Dijkstra - [이론(업데이트 예정)]()
 
 [문제 리스트](./algorithm/dijkstra)
+
+
+
+#### 세그먼트 트리 - [이론(업데이트 예정)]()
+
+[문제 리스트](./algorithm/Segment_Tree)
+
