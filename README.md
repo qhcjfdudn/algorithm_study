@@ -3,7 +3,7 @@
 
 
 
-#### 이진탐색 - [이론(업데이트 예정)]()
+#### 이진탐색 - [이론(작성 중)](https://github.com/qhcjfdudn/algorithm_study/blob/master/study/%EC%9D%B4%EC%A7%84%ED%83%90%EC%83%89(Binary%20Search).md)
 
 [문제 리스트](./algorithm/Binary_Search)
 
