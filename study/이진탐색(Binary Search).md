@@ -56,3 +56,5 @@ int binary_find_index(int arr[], int len, int v) {
 }
 ```
 
+이진탐색을 이해하기 위해 수학적으로 나타내면 아래와 같은 그래프로 나타낼 수 있다.
+
