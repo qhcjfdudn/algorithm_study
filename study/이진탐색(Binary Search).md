@@ -45,6 +45,7 @@ int binary_find_index(int arr[], int len, int v) {
     int left = 0, right = len - 1;
     while (left <= right) {
         int mid = (right - left) / 2 + left; // index 범위의 오버플로우를 피하기 위함
+        									// 또한 소수점 아래의 수는 버림한다.
         if (arr[mid] == v) return mid;
         if (arr[mid] > v) 
             right = mid - 1;
@@ -55,6 +56,33 @@ int binary_find_index(int arr[], int len, int v) {
     return -1 // 찾는 값이 없을 경우
 }
 ```
+
+위에서 보았던 배열과 함께 차근차근 적용해보자.
+
+
+
+1. left : 0, right = 8, mid = (8 - 0) / 2 + 0 = 4
+   ![mid1](./assets/Binary_Search/mid1.png)
+   174 < 179(현진이의 키)이므로 left = 5(mid + 1)을 수행한다.
+   이유는, 키가 정렬이 되어 있기 때문에, 174보다 왼쪽에는 절대 179가 존재할 수 없기 때문이다.
+2. left : 5, right = 8, mid = (8 - 5) / 2 + 5 = 6
+   ![mid2](./assets/Binary_Search/mid2.png)
+   177 < 179이므로 left = 7을 수행한다.
+3. left : 7, right : 8, mid = (8 - 7) / 2 + 7 = 7
+   ![mid3](./assets/Binary_Search/mid3.png)
+   179 == 179이므로, index 7을 리턴한다.
+
+위의 과정을 find_index() 함수를 통해 수행하였다면 총 7번 만에 답을 도출할 수 있었겠지만, binary_find_index() 함수를 통해서는 총 3번 만에 답을 도출하였다.
+이를 시간복잡도로 표현하면 다음과 같다.
+
+선형 탐색의 시간 복잡도(find_index()) : O(N)
+이진 탐색의 시간 복잡도(binary_find_index()) : O(logN)
+
+
+
+### 이진 탐색을 적용 가능한 예
+
+
 
 이진탐색을 이해하기 위해 수학적으로 나타내면 아래와 같은 그래프로 나타낼 수 있다.
 
